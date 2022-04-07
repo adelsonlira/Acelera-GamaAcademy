@@ -12,4 +12,8 @@ public class Aluno extends Pessoa{
     public void dormir() {
         System.out.println("Aluno dormindo 10h");
     }
+
+    public static void crescer(String nome){
+        System.out.println(nome+" Crescendo");
+    }
 }

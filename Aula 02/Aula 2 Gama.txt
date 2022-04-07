@@ -1,0 +1,65 @@
+*Overriding (Sobrescrita/Reescrita)
+- Apresenta mesmo nome do método e mesmos parametros mas resultado diferente.
+- Funciona com herança
+
+class Dog{
+	public void bark(){
+		System.out.println("woof");
+	}
+}
+
+//Overriding
+class Hound extends Dog{
+	public void bark(){
+		System.out.println("bowl");
+	}
+}
+
+
+*Overloading (Sobrecarga)
+- Apresenta mesmo nome do método com parametros de assinatura diferente.
+- Sempre na mesma classe
+
+class Dog{
+	public void bark(){
+		System.out.println("woof");
+	}
+}
+
+//Overloading
+class Dog{
+	public void bark(int num){
+		for(int i = 0; i < num; i++)
+			System.out.println("woof");
+	}
+}
+
+*Métodos estáticos
+--> Podem ser acessados diretamente usando o nome da Classe.
+--> Não podem ser substituídos.
+--> Métodos não estáticos podem chamar métodos estáticos utilizando o nome da classe.
+--> Métodos estáticos e não estáticos não são acessados diretamente.
+--> Um Método estático não pode se referir a "this" ou "super" em qualquer lugar.
+
+*Variáveis estáticas
+--> São declaradas com palavra-chave static.
+--> Também chamada  de variáveis de classe.
+--> As variáveis de classe pertencem a toda a classe e não a uma instância específica da classe.
+--> Uma única variável estática pode ser compartilhada por todas as instâncias de uma classe.
+--> Não podemos criar variáveis estáticas nos métodos normais.
+--> Variáveis de classe são alocadas na memória apenas uma vez no momento do carregamento da
+classe, e que pode ser comumente acessado por todas as instâncias da classe.
+--> Variáveis estáticas são alocadas na memória do pool estático.
+--> Como a memória para as variáveis da classe é alocada no momento do carregamento da própria
+classe, podemos acessar as variáveis estáticas diretamente com o próprio nome da classe.
+
+*Blocos estáticos
+--> Existe diferentes tipos de blocos em Java, como bloco de inicialização, bloco sincronizado e bloco estático.
+--> Cada bloco tem sua importância
+--> Bloco estátio é um bloco de instruções, que é definido usando a palavra-chave static.
+--> O bloco estático é o primeiro a ser executado, depois vem os blocos anonimos e por fim o construtor.
+
+*Objetos e referências
+--> Uma referência é utilizada para armazenar o endereço de um objeto alocado na memória.
+--> Pela referência é manipulado o estado do objeto.
+--> Pode ser um atributo, variável local ou argumentos de métodos.
