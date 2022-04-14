@@ -1,0 +1,8 @@
+*Contrutores
+--> Um bloco de código que executa na instanciação de uma classe
+--> São invocados implicitamente
+--> Toda classe já possui um construtor default herdado do class
+--> Não possuem retorno
+--> Contem o mesmo nome da classe
+--> Podem conter inúmeros parâmetros respeitando as regras de sobrecarga
+
